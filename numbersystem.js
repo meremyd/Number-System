@@ -8,6 +8,7 @@ function initListeners() {
 
   fromSystemSelect.addEventListener("change", function () {
     validateInput();
+    updateFromOptions();
   });
 
   inputField.addEventListener("input", function () {
@@ -17,6 +18,14 @@ function initListeners() {
   inputField.addEventListener("keydown", function (event) {
     disableInvalidInput(event);
   });
+  
+  const toSystemSelect = document.getElementById("toSystem");
+
+toSystemSelect.addEventListener("change", function () {
+  updateFromOptions();
+  // Add any other relevant logic here
+});
+  
 }
 
 function disableInvalidInput(event) {
@@ -78,7 +87,7 @@ function convert() {
 
   document.getElementById("outputValue").value = result;
 
-  
+  // Save to history
   inputHistory.push(inputValue);
   outputHistory.push(result);
   historyIndex = inputHistory.length - 1;
@@ -126,7 +135,7 @@ function reverse() {
   document.getElementById("inputValue").value = outputValue;
   document.getElementById("outputValue").value = inputValue;
 
-  
+  // Save to history
   inputHistory.push(inputValue);
   outputHistory.push(outputValue);
   historyIndex = inputHistory.length - 1;
@@ -138,7 +147,7 @@ function reset() {
   document.getElementById("inputValue").value = "";
   document.getElementById("outputValue").value = "";
 
-  
+  // Reset history
   inputHistory = [];
   outputHistory = [];
   historyIndex = -1;
@@ -205,7 +214,6 @@ function updateToOptions() {
     toSystemSelect.options[selectedToIndex].disabled = true;
   }
 
-
   keypadButtons.forEach((button) => {
     const value = button.textContent;
     const isLetter = /^[A-Fa-f]$/.test(value);
@@ -221,8 +229,24 @@ function updateToOptions() {
   });
 }
 
+function updateFromOptions() {
+  const fromSystemSelect = document.getElementById("fromSystem");
+  const toSystem = document.getElementById("toSystem").value;
 
+  for (let i = 0; i < fromSystemSelect.options.length; i++) {
+    fromSystemSelect.options[i].disabled = false;
+  }
 
+  const selectedFromIndex = Array.from(fromSystemSelect.options).findIndex(
+    (option) => option.value === toSystem
+  );
+
+  if (selectedFromIndex !== -1) {
+    fromSystemSelect.options[selectedFromIndex].disabled = true;
+  }
+}
+
+updateFromOptions();
 updateToOptions();
 initListeners();
 
