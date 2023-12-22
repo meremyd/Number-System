@@ -144,14 +144,20 @@ function reverse() {
 }
 
 function reset() {
+  const fromSystemSelect = document.getElementById("fromSystem");
+  const toSystemSelect = document.getElementById("toSystem");
+  
   document.getElementById("inputValue").value = "";
   document.getElementById("outputValue").value = "";
+  
+  fromSystemSelect.value = "";
+  toSystemSelect.value = "";
+ 
 
-  // Reset history
   inputHistory = [];
   outputHistory = [];
   historyIndex = -1;
-}
+    }
 
 function backspace() {
   const inputValue = document.getElementById("inputValue").value;
