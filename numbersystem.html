@@ -31,7 +31,7 @@
         <option value="hexadecimal">Hexadecimal</option>
       </select>
       <button onclick="reverse()" class="button"><i class="bi bi-arrow-left-right"></i></button>
-      <select id="toSystem" class="option" >
+      <select id="toSystem" class="option" onchange="updateFromOptions()" >
         <option value="" disabled selected hidden>To</option>
         <option value="binary">Binary</option>
         <option value="decimal">Decimal</option>
