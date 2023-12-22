@@ -1,0 +1,284 @@
+body {
+  background-image: url('img/cd.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: darkslategray;
+}
+
+.container{
+  background-image: url('img/cb.jpeg');
+  background-size: cover;
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 10px;
+ margin-right: 10px;
+ text-align: center;
+ border-top: 2px solid white;
+ border-bottom: 2px solid white;
+ margin: 1px;
+ border-radius: 25px;
+ box-shadow: 0 25px 25px rgba(0, 0, 0, 0.5);
+}
+.back{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: palevioletred;
+  position:absolute; 
+  top:0; 
+  left:0;
+}
+
+.titlename{
+  color: darkslategray;
+ font-family: "Times New Roman", Times, serif;
+ font-size: 50px;
+ margin-top: 10px;
+ margin-bottom: 50px;
+ margin-left: 10px;
+ margin-right: 10px;
+ border-radius: 25px;
+ border-bottom-color: darkred;
+}
+
+.display{
+ background: rgba(255, 255, 255, 0.3);
+ padding: 5px;
+ border-style: double;
+ border-color: silver;
+ border-width: 10px;
+ margin: 1px;
+ border-radius: 25px;
+ box-shadow: 5px 10px 20px gray inset;
+}
+
+input {
+  width: 70%;
+  height: 40px;
+  padding: 0px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+#inputValue{
+  border-bottom: 2px solid black;
+  background: transparent;
+}
+body {
+  background-image: url('img/cd.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: darkslategray;
+}
+
+.container{
+  background-image: url('img/cb.jpeg');
+  background-size: cover;
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 10px;
+ margin-right: 10px;
+ text-align: center;
+ border-top: 2px solid white;
+ border-bottom: 2px solid white;
+ margin: 1px;
+ border-radius: 25px;
+ box-shadow: 0 25px 25px rgba(0, 0, 0, 0.5);
+}
+.back{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: palevioletred;
+  position:absolute; 
+  top:0; 
+  left:0;
+}
+
+.titlename{
+  color: darkslategray;
+ font-family: "Times New Roman", Times, serif;
+ font-size: 50px;
+ margin-top: 10px;
+ margin-bottom: 50px;
+ margin-left: 10px;
+ margin-right: 10px;
+ border-radius: 25px;
+ border-bottom-color: darkred;
+}
+
+.display{
+ background: rgba(255, 255, 255, 0.3);
+ padding: 5px;
+ border-style: double;
+ border-color: silver;
+ border-width: 10px;
+ margin: 1px;
+ border-radius: 25px;
+ box-shadow: 5px 10px 20px gray inset;
+}
+
+input {
+  width: 70%;
+  height: 40px;
+  padding: 0px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+#inputValue{
+  border-bottom: 2px solid black;
+  background: transparent;
+}
+#inputValue::placeholder{
+  font-family: 'Times New Roman', serif;
+}
+
+#outputValue{
+  background-color: palevioletred;
+  color: white;
+  border-radius: 5px;
+  text-align: right;
+  font-size: 20px;
+}
+#outputValue::placeholder{
+  color: black;
+  font-size: 20px;
+  font-family: 'Times New Roman', serif;
+  text-align: right;
+}
+
+.result{
+  background: white;
+}
+
+.button{
+  margin-bottom: 10px;
+  padding: 10px;
+  border-top: 1px solid white;
+  border-left: white;
+  border-radius: 10px;
+  background: palevioletred;
+  
+}
+.cbutton{
+  margin-bottom: 10px;
+  padding: 15px;
+  border-top: 1px solid white;
+  border-left: white;
+  border-radius: 10px;
+  background: palevioletred;
+}
+
+
+.buttons{
+  margin-bottom: 10px;
+  padding: 10px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  background: palevioletred;
+  width: 70px;
+}
+
+.buttons:hover{
+ border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.button:hover:before{
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.option{
+  padding:10px;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin: 10px;
+  background: pink
+  
+}
+
+.disabled-button {
+  background: #ffc2e5;
+  cursor: not-allowed;
+}
+#inputValue::placeholder{
+  font-family: 'Times New Roman', serif;
+}
+
+#outputValue{
+  background-color: palevioletred;
+  color: white;
+  border-radius: 5px;
+  text-align: right;
+  font-size: 20px;
+}
+#outputValue::placeholder{
+  color: black;
+  font-size: 20px;
+  font-family: 'Times New Roman', serif;
+  text-align: right;
+}
+
+.result{
+  background: white;
+}
+
+.button{
+  margin-bottom: 10px;
+  padding: 10px;
+  border-top: 1px solid white;
+er-left: white;
+  border-radius: 10px;
+  background: palevioletred;
+  
+}
+.cbutton{
+  margin-bottom: 10px;
+  padding: 15px;
+  border-top: 1px solid white;
+  border-left: white;
+  border-radius: 10px;
+  background: palevioletred;
+}
+
+
+.buttons{
+  margin-bottom: 10px;
+  padding: 10px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  background: palevioletred;
+  width: 70px;
+}
